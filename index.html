@@ -1,188 +1,778 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--   #2094d1   [if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>::Pritesh Mehta::</title>
-    <link href="static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/css/font-awesome.min.css" rel="stylesheet"> 
-    <link href="static/css/main.css" rel="stylesheet">    
-    <link rel="shortcut icon" href="static/images/favicon.ico">
-</head><!--/head-->
 
-<body>
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Pritesh Mehta</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-<!--.preloader-->
-<div class="preloader"><i class="fa fa-circle-o-notch fa-spin"></i></div>
-<!--/.preloader-->
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<header id="header"> 
-    <div class="container">
-        <div class="container-inner">
-            <div class="logo pull-left">
-                <a class="pull-left logo" href="index.html">
-                    <h1><img class="img-responsive" src="images/logo1.png" alt="logo"></h1>
-                </a>
-            </div>
-            <div class="menu pull-right">
-                <a href="#" class="nav-button">
-                    <i class="fa fa-align-justify"></i> Menu
-                </a> 
-            </div>
-        </div>
-    </div>
-</header> <!--/#header-->
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
 
-<div id="navigation">
-    <div class="vertical-middle">
-        <div class="vertical-middle-inner">
-            <div class="main-nav">
-                <a id="hidemenu" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
-                <ul>                     
-                    <li class="active"><a href="#" data-target="#page-slider" data-slide-to="0">Home</a></li>
-                    <li><a href="#" data-target="#page-slider" data-slide-to="1">About</a></li>
-                    <li><a href="#" data-target="#page-slider" data-slide-to="2">Service</a></li>                                         
-                    <li><a href="#" data-target="#page-slider" data-slide-to="3">Blog</a></li>                     
-                </ul>
-            </div>
-        </div>
-    </div>
-</div><!--/#navigation-->
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
 
-<section id="welcome-page">
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
 
-    <div id="page-slider" class="carousel slide" data-interval="false">
+</head>
 
-        <ol class="carousel-indicators visible-xs">
-            <li data-target="#page-slider" data-slide-to="0" class="active"></li>
-            <li data-target="#page-slider" data-slide-to="1"></li>
-            <li data-target="#page-slider" data-slide-to="2"></li>
-            <li data-target="#page-slider" data-slide-to="3"></li>            
-        </ol>
+<body id="top">
 
-        <a class="welcome-page-left hidden-xs" href="#page-slider" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-        <a class="welcome-page-right hidden-xs" href="#page-slider" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
 
-        <div class="carousel-inner">
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
 
-            <div id="home-page" class="item active">
-                <div class="container">
-                    <div class="vertical-middle">
-                        <div class="vertical-middle-inner">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-push-6">
-                                    <div class="embed-responsive embed-responsive-16by9">
-                                        <iframe class="embed-responsive-item" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-pull-6">
-                                    <h2 class="heading">Hi <br> there!</h2>
-                                    <p class="lead">I'm Pritesh Mehta, </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!--/#home-page-->
+	   		<div class="logo">
+		         <a href="index.html">Pritesh</a>
+		      </div>		      
 
-            <div id="about-page" class="item">
-                <div class="container">
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Projects</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>	
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
 
-                    <div class="vertical-middle">
-                        <div class="vertical-middle-inner">
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">   
 
-                            <div class="text-center">
-                                <h2 class="page-header">About Me</h2>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm-4">
-                                    <div class="box">
-                                        <h3>Our Company</h3>
-                                        <p>Text Goes Here.</p>
-                                    </div>
-                                </div>
-                            </div>
+   	<div class="intro-overlay"></div>	
 
-                        </div>
-                    </div>
-				</div>
-            </div><!--/#about-page-->
+   	<div class="intro-content">
+   		<div class="row">
 
-            <div id="service-page" class="item">
-                <div class="container">
+   			<div class="col-twelve">
 
-                    <div class="vertical-middle">
-                        <div class="vertical-middle-inner">
+	   			<h5>Hi! there!</h5>
+	   			<h1>I'm Pritesh Mehta</h1>
 
-                            <div class="text-center">
-                                <h2 class="page-header">My Profile</h2>
-                            </div>
+	   			<p class="intro-position">
+	   				<span>Software Engineer in Test</span>
+	   				<span>DevOps Engineer</span> 
+	   			</p>
 
-                            <div class="row">
-                                <div class="col-sm-3 text-center">
-                                    <div class="box">
-                                        <i class="fa fa-apple fa-2x"></i>
-                                        <h3>iOS App</h3>
-                                        <p>Text Goes Here.</p>
-                                    </div>
-                                </div>                               
-                            </div>
-                        </div>
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
 
-                    </div>
-                    
-				</div>                
-            </div><!--/#service-page-->
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
 
-         
+   	<ul class="intro-social">        
+         <li><a href="https://www.facebook.com/prits"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="https://twitter.com/mehtapritesh"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="https://www.linkedin.com/in/mehtapritesh/"><i class="fa fa-linkedin"></i></a></li>
+      </ul> <!-- /intro-social -->      	
 
-            <div id="blog-page" class="item">
-                <div class="container">
+   </section> <!-- /intro -->
 
-                    <div class="vertical-middle">
-                        <div class="vertical-middle-inner">
 
-                            <div class="text-center">
-                                <h2 class="page-header">My Blog</h2>
-                            </div>
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
 
-                            <div class="row">
+   	<div class="row section-intro">
+   		<div class="col-twelve">
 
-                                <div class="col-sm-4">
-                                    <div class="overlay-container">
-                                        <img class="img-responsive" src="images/blog/1.jpg" alt="">
-                                        <div class="overlay">
-                                            <div class="vertical-middle">
-                                                <div class="vertical-middle-inner">
-                                                    <a class="readmore" href="#"><i class="fa fa-link"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h3 class="entry-title"><a href="#">Text Goes Here</a></h3>
-                                </div>                                                             
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
 
-                            </div>
+   			<div class="intro-info">
 
-                        </div>
-                    </div>
+   				<img src="images/profile-pic.jpg" alt="Profile Picture">
 
-                </div>                
-            </div><!--/#blog-page-->
-           
-        </div><!--/.carousel-inner-->
-    </div>
-</section>
+   				<p class="lead">Software engineer with over 12 years of experience in Software Testing, thorough hands on experience in all levels of testing, including API, performance, functional, Integration, regression and user acceptance testing. Enthusiastic team player with excellent ability of test planning, test execution and automation development</p>
+   			</div>   			
 
-<footer id="footer" class="text-center">
-    Footer Text</a>
-</footer>
+   		</div>   		
+   	</div> <!-- /section-intro -->
 
-<script type="text/javascript" src="static/js/jquery.js"></script>
-<script type="text/javascript" src="static/js/bootstrap.min.js"></script>  
-<script type="text/javascript" src="static/js/main.js"></script>
+   	<div class="row about-content">
+
+   		<!--div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Pritesh Mehta/span>
+   				</li>
+   				<li>
+   					<strong>Email:</strong>
+   					<span>mehata.pritesh@gmail.com</span>
+   				</li>
+
+   			</ul> 
+
+   		</div -->
+
+
+   		<div class="col-six tab-full">
+
+   			<h3>Testing Techniques</h3>
+   			<p></p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent95"><span>90%</span></div>
+				   	<strong>UI Automation (Selenium)</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>API Testing</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Security Testing</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Mobile App Testing</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>90%</span></div>
+				   	<strong>Robot Framework</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>90%</span></div>
+				   	<strong>Cucumber Framework</strong>
+				   </li>
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+
+
+   		<div class="col-six tab-full">
+
+   			<h3>Tools and Programing Languages</h3>
+   			<p></p>
+
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent85"><span>80%</span></div>
+				   	<strong>Python</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>Java</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent60"><span>60%</span></div>
+				   	<strong>C++</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>AWS</strong>
+				   </li>
+                   <li>
+				   	<div class="progress percent95"><span>85%</span></div>
+				   	<strong>CI/CD Tools (Jenkins, Spinnaker) </strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+				   	<strong>Docker &#x26; Kubernetes </strong>
+				   </li>
+      
+				</ul> <!-- /skill-bars -->		
+
+   		</div>
+
+   	</div>
+
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button button-primary">Contact Me</a>
+   			
+   		</div>   		
+   	</div>
+
+   </section> <!-- /process-->    
+
+
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Resume</h5>
+   			<h1>More of my credentials</h1>
+   			<p class="lead">
+   				<i class="fa fa-chevron-right" style="text-align:left">  Extensive experience working on Web UI Testing, Integration &#x26; API testing (Selenium - Robot framework)</i>
+   				<i class="fa fa-chevron-right" style="text-align:left">  Strong knowledge of testing fundamentals and QA processes </i>
+        		<i class="fa fa-chevron-right" style="text-align:left">  Extensively worked on Virtualization and Security domain</i>
+        		<i class="fa fa-chevron-right" style="text-align:left">  Solid understanding of Web technologies and basic SQL queries as well as GUI design standards </i>
+        		<i class="fa fa-chevron-right" style="text-align:left">  Well versed with cutting edge Cloud technologies for SaaS (AWS, Docker, Kubernetes, NoSQL db etc </i>
+			</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Sr. Software Engineer in Test</h3>
+	   					<p>October 2016 - Present</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>SourceClear</h4>
+	   					<p>SourceClear is a continuous security platform that gives you visibility and control over the open-source code you are using. Teams can collaborate to remediate security and compliance issues - giving you the confidence to move fast.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Sr. SQA Engineer </h3>
+	   					<p>July 2014 - June 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Autodesk</h4>
+	   					<p>Autodesk makes software for people who make things. Across the manufacturing, architecture, building, construction, media, and entertainment industries, Autodesk gives you the power to make anything.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Principal QA Engineer </h3>
+	   					<p>September 2010 - September 2015</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Symantec</h4>
+	   					<p>Symantec Corporation the world’s leading cyber security company, allows organizations, governments, and people to secure their most important data wherever it lives. Enterprises across the world rely on Symantec for integrated cyber defense against sophisticated attacks across endpoints, infrastructure, and cloud.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Sr. QA Engineer </h3>
+	   					<p>June 2008 - September 2010</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Persistent Systemts</h4>
+	   					<p>Persistent Sytstems is a well-respected technology service company focused on delivering best in class innovative solutions to its customers and partners.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Sr. SQA Engineer</h3>
+	   					<p>March 2006 - June 2008</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>eInfochips Pvt. Ltd.</h4>
+	   					<p>eInfochips is a product engineering and software R &#x26; D services company with over 20 years of experience. It's core expertise in embedded systems development.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education and Certification </h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Certification</h3>
+	   					<p>Auguest 2009 </p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>ISTQB Certification</h4>
+	   					<p></p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-graduation-cap"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Bachelor Degree</h3>
+	   					<p>June 2001 - June 2005</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Hemchandracharya North Gujarat University</h4>
+	   					<p></p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+		
+	</section> <!-- /features -->
+
+
+	
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Projects</h5>
+   			<h1>I have worked on...</h1>
+
+   			<p class="lead"></p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-chat"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>SourceClear WebApp</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+	         		</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-desktop"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>A360 Desktop</h3>  
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem.
+	         		</p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-paint-brush"></i></span>		            
+
+	            <div class="service-content">
+
+	            	<h3>Advance Threat Protection</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+	        			</p> 
+
+	            </div> 	            	               
+
+			   </div> <!-- /service -->
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>Data Center Security: Server Advanced</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+	         		</p> 
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-search"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>AV Scaning API</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+	        			</p> 
+
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-mail"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Symantec Email Gateway</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-mail"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>CaTissue</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-mail"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Room Wizard</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-pencil-ruler"></i>
+						</div>
+
+						<h3 class="stat-count">
+							18
+						</h3>
+
+						<h5 class="stat-title">
+							Projects Worked 
+						</h5>
+
+					</div> <!-- /stat -->					
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-users"></i>
+						</div>
+
+						<h3 class="stat-count">
+							500
+						</h3>
+
+						<h5 class="stat-title">
+							Defect Logged
+						</h5>
+
+					</div> <!-- /stat -->
+
+													
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-light-bulb"></i>
+						</div>
+
+						<h3 class="stat-count">
+							120
+						</h3>
+
+						<h5 class="stat-title">
+							Crazy Ideas
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-cup"></i>
+						</div>
+
+						<h3 class="stat-count">
+							1200
+						</h3>
+
+						<h5 class="stat-title">
+							Coffee Cups
+						</h5>
+
+					</div> <!-- /stat -->
+					
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead"></p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+   	<div class="row contact-info">
+
+   		<div class="col-four tab-full">
+
+   			<div class="icon">
+   				<i class="icon-pin"></i>
+   			</div>
+
+   			<h5>Where to find me</h5>
+
+   			<p>
+            Singapore<br>
+            </p>
+
+   		</div>
+
+   		<div class="col-four tab-full collapse">
+
+   			<div class="icon">
+   				<i class="icon-mail"></i>
+   			</div>
+
+   			<h5>Email Me At</h5>
+
+   			<p>mehta.pritesh@gmail.com</p>
+
+   		</div>
+
+   		<div class="col-four tab-full">
+   		</div>
+   		
+   	</div> <!-- /contact-info -->
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			       <li><a href="https://www.facebook.com/prits"><i class="fa fa-facebook"></i></a></li>
+         			<li><a href="https://twitter.com/mehtapritesh"><i class="fa fa-twitter"></i></a></li>
+         			<li><a href="https://www.linkedin.com/in/mehtapritesh/"><i class="fa fa-linkedin"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+      	<div class="col-six tab-full">
+	      	
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
 
 </body>
+
 </html>
