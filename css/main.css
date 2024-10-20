@@ -158,6 +158,11 @@ p.lead {
 	line-height: 1.8;
 	color: #888888;
 }
+.summary {
+	font-family: "Open Sans";
+	font-size: 1.5rem;
+	color: #888888;
+}
 @media only screen and (max-width:768px) {
 	p.lead {
 		font-size: 1.7rem;
